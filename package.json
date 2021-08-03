@@ -18,6 +18,6 @@
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "ts-node-dev": "^1.1.8"
+    "ts-node-dev": "1.1.8"
   }
 }
