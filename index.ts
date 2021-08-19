@@ -6,7 +6,7 @@ import { ApolloGateway } from "@apollo/gateway";
 import { addMocksToSchema } from "@graphql-tools/mock";
 
 const mocks = {
-  Int: () => 808,
+  Int: () => 400,
   Float: () => 22.1,
   String: () => "Mocked String",
 };
@@ -15,9 +15,9 @@ const realGateway = new ApolloGateway();
 
 const gateway: GatewayInterface = {
   async load(options) {
-    const { schema } = await realGateway.load(options);
+    await realGateway.load(options);
     return {
-      schema: addMocksToSchema({ schema, mocks }),
+      schema: null,
       executor: null,
     };
   },
@@ -25,7 +25,15 @@ const gateway: GatewayInterface = {
     return realGateway.stop();
   },
   onSchemaLoadOrUpdate(callback) {
-    return realGateway.onSchemaLoadOrUpdate(callback);
+    return realGateway.onSchemaLoadOrUpdate((schemaContext) => {
+      callback({
+        ...schemaContext,
+        apiSchema: addMocksToSchema({
+          schema: schemaContext.apiSchema,
+          mocks,
+        }),
+      });
+    });
   },
 };
 
