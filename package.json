@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/gateway": "^0.46.0",
+    "@apollo/gateway": "^0.47.0",
     "apollo-server": "^3.6.1",
     "dotenv": "^16.0.0"
   },
