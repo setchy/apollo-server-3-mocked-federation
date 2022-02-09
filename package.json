@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/gateway": "0.47.0",
-    "apollo-server": "3.6.1",
+    "@apollo/gateway": "0.48.0",
+    "apollo-server": "3.6.3",
     "dotenv": "16.0.0"
   },
   "devDependencies": {
