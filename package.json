@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/gateway": "^0.47.0",
-    "apollo-server": "^3.6.1",
-    "dotenv": "^16.0.0"
+    "@apollo/gateway": "0.47.0",
+    "apollo-server": "3.6.1",
+    "dotenv": "16.0.0"
   },
   "devDependencies": {
     "ts-node-dev": "1.1.8"
