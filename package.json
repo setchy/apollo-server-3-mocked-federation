@@ -14,7 +14,7 @@
   "dependencies": {
     "@apollo/gateway": "2.0.2",
     "apollo-server": "3.7.0",
-    "dotenv": "16.0.0"
+    "dotenv": "16.0.1"
   },
   "devDependencies": {
     "ts-node-dev": "1.1.8"
