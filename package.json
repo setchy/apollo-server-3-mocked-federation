@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/gateway": "2.1.3",
-    "apollo-server": "3.10.2",
+    "apollo-server": "3.10.3",
     "dotenv": "16.0.3"
   },
   "devDependencies": {
