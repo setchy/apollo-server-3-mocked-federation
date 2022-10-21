@@ -1,7 +1,7 @@
 {
-  "name": "apollo-gateway",
+  "name": "apollo-server-3-mocked-federation",
   "version": "1.0.0",
-  "description": "Apollo Server 3 managed federation example",
+  "description": "Apollo Server 3 mocked federation example",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only --watch .env index.ts",
