@@ -1,11 +1,13 @@
-An example of mocking a mangaged federation `apollo-gateway` powered by apollo server 3.x.
+# Apollo Server 3 Mocked Federation
 
-Since it is a managed federation gateway, the mocked schema is the supergraph from Apollos Schema Registry
+This repository contains a example of how to mock a managed federation Supergraph schema with [apollo-gateway](https://github.com/apollographql/federation) powered by [apollo-server](https://github.com/apollographql/apollo-server/) version 3.x.
+
+_Note: Since we are using managed federation, the mocked schema is the Supergraph schema from your Apollo Studio Schema Registry._
 
 ## Assumptions
 
 - You already have an Apollo Studio organization / account
-- At least one `subgraph` has been published to the schema registry for the below mentioned has been published for the `APOLLO_KEY` and `APOLLO_GRAPH_REF` pair
+- At least one `subgraph` has been published to the schema registry for the below mentioned `APOLLO_KEY` and `APOLLO_GRAPH_REF` pair
 
 ## Getting started
 
