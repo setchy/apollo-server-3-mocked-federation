@@ -33,8 +33,7 @@ const gateway: GatewayInterface = {
 };
 
 const server = new ApolloServer({ gateway: gateway });
-
 server.listen();
 
 console.log(`🚀 Apollo Server 3 with managed federation`);
-console.log(`🚀 Apollo Gateway now ready at http://localhost:4000/graphql`);
+console.log(`🚀 Apollo Gateway now ready at http://localhost:4000/`);
