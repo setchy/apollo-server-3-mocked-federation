@@ -4,12 +4,7 @@ import { ApolloServer } from "apollo-server";
 import { GatewayInterface } from "apollo-server-core";
 import { ApolloGateway } from "@apollo/gateway";
 import { addMocksToSchema } from "@graphql-tools/mock";
-
-const mocks = {
-  Int: () => 400,
-  Float: () => 22.1,
-  String: () => "Mocked String",
-};
+import { mocks } from "./mocks";
 
 const realGateway = new ApolloGateway();
 
@@ -30,7 +25,7 @@ const gateway: GatewayInterface = {
         ...schemaContext,
         apiSchema: addMocksToSchema({
           schema: schemaContext.apiSchema,
-          mocks,
+          mocks: mocks,
         }),
       });
     });
