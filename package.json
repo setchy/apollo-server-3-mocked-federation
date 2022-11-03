@@ -16,7 +16,7 @@
   "dependencies": {
     "@apollo/gateway": "2.1.4",
     "@faker-js/faker": "^7.6.0",
-    "apollo-server": "3.10.4",
+    "apollo-server": "3.11.1",
     "dotenv": "16.0.3"
   },
   "devDependencies": {
