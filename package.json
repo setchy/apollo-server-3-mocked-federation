@@ -4,7 +4,7 @@
   "description": "Apollo Server 3 mocked federation example",
   "main": "index.js",
   "engines": {
-    "node": "16"
+    "node": "18"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only --watch .env index.ts",
