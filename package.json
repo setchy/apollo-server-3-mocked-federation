@@ -14,7 +14,7 @@
   "author": "Adam Setch <@setchy>",
   "license": "ISC",
   "dependencies": {
-    "@apollo/gateway": "2.7.5",
+    "@apollo/gateway": "2.7.6",
     "@faker-js/faker": "8.4.1",
     "apollo-server": "3.13.0",
     "dotenv": "16.4.5"
